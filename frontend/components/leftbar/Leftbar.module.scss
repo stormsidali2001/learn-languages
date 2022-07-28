@@ -1,4 +1,56 @@
 .container{
     flex:3;
     height: calc(100vh - var(--topbar-height));
+    overflow-y: scroll;
+    &::-webkit-scrollbar{
+        width: 5px;
+    }
+    &::-webkit-scrollbar-track{ //al masar 
+        background-color: rgb(216, 207, 207);
+    }
+    &::-webkit-scrollbar-thumb{
+        background-color: rgb(148, 142, 142);
+    }
+    .wrapper{
+        padding:20px;
+        .list{
+            list-style: none;
+            padding: 0;
+            margin: 0;
+            display: flex;
+            flex-direction: column;
+            row-gap: 20px;
+            .item{
+                display: flex;
+                align-items: center;
+                column-gap: 5px;
+            }
+        }
+      
+        hr{
+            margin:20px 0px;
+        }
+        .friendList{
+            padding: 0;
+            margin: 0;
+            list-style: none;
+            display: flex;
+            flex-direction: column;
+            row-gap: 10px;
+            .friend{
+                display: flex;
+                align-items: center;
+                column-gap: 5px;
+                .profilImage{
+                    width: 32px;
+                    height: 32px;
+                    border-radius: 50%;
+                    object-fit: conver;
+                }
+                .name{
+
+                }
+            }
+        }
+    }
 }
