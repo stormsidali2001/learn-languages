@@ -5,17 +5,78 @@
     display: flex;
     align-items: center;
     position: sticky;
+    color:white;
     top:0;
     .left{
         flex:3;
-        background-color: red;
+        .logo{
+            font-size: 24px;
+            margin-left: 20px;
+            font-weight: bold;
+            color: white;
+        }
     }
     .center{
         flex:5;
-        background-color: green;
+        .search{
+            width: 300px;
+            height: 30px;
+            background-color: white;
+            border-radius: 30px;
+            display: flex;
+            align-items: center;
+            padding: 2px 4px;
+            input{
+                width: 100%;
+                background-color: transparent;
+                outline: none;
+                border:none
+            }
+            .icon{
+                font-size: 20px !important;
+            }
+        }
     }
     .right{
         flex:4;
-        background-color: red;
+        display: flex;
+        align-items: center;
+        justify-content: space-around;
+        .icons{
+            display: flex;
+            column-gap: 10px;
+            .iconContainer{
+                cursor: pointer;
+                position: relative;
+                .badge{
+                    position: absolute;
+                    width: 15px;
+                    height: 15px;
+                    background-color:red;
+                    border-radius: 50%;
+                    top:-5px;
+                    right:-5px;
+                    display: flex;
+                    justify-content: center;
+                    align-items: center;
+                    font-size: 12px;
+                }
+            }
+
+        }
+        .links{
+            display: flex;
+            font-size: 14px;
+            cursor: pointer;
+            column-gap: 5px;
+        }
+        .profilImage{
+            width: 32px;
+            height: 32px;
+            border-radius: 50%;
+            object-fit: cover;
+            cursor: pointer;
+        }
     }
+    
 }

@@ -47,15 +47,12 @@ const TopBar = () => {
                         )
                     })
                 }
-                <span className={styles.link}>Homepage</span>
-                <span className={styles.link}>Timeline</span>
-
             </div>
             <div className={styles.icons}>
                 {
                     icons.map(({badge,icon},index)=>{
                         return (
-                            <div key={index} className={styles.icon}>
+                            <div key={index} className={styles.iconContainer}>
                                 {icon}
                                 <span className={styles.badge}>{badge}</span>
                             </div>
@@ -63,7 +60,7 @@ const TopBar = () => {
                     })
                 }
             </div>
-            <img src='' alt=''/>
+            <img className={styles.profilImage} src='/sidali.jpg' alt=''/>
         </div>
     </nav>
   )
