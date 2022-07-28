@@ -1,10 +1,9 @@
 import styles from './Rightbar.module.scss'
-const RightBar = ()=>{
+const Rightbar = ()=>{
     return(
         <div className={styles.container}>
-
         </div>
     )
 }
 
-export default RightBar;
+export default Rightbar;

@@ -1,5 +1,5 @@
 .container{
-    height: 50px;
+    height: var(--topbar-height);
     width: 100%;
     background-color: var(--primary);
     display: flex;
@@ -34,6 +34,7 @@
             }
             .icon{
                 font-size: 20px !important;
+                color:black
             }
         }
     }
