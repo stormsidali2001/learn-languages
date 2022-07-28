@@ -1,0 +1,21 @@
+.container{
+    height: 50px;
+    width: 100%;
+    background-color: var(--primary);
+    display: flex;
+    align-items: center;
+    position: sticky;
+    top:0;
+    .left{
+        flex:3;
+        background-color: red;
+    }
+    .center{
+        flex:5;
+        background-color: green;
+    }
+    .right{
+        flex:4;
+        background-color: red;
+    }
+}
